@@ -123,3 +123,5 @@ export async function createMetricsHandler(components: Pick<Components, 'config'
     }
   }
 }
+
+export * from './metrics'
