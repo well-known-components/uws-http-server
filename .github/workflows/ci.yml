@@ -10,6 +10,8 @@ on:
 name: CI
 jobs:
   build:
+    permissions:
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
