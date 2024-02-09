@@ -1,0 +1,46 @@
+{
+  "name": "@well-known-components/uws-http-server",
+  "version": "0.0.0",
+  "description": "uws http server component",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --forceExit --detectOpenHandles --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/well-known-components/uws-http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/well-known-components/uws-http-server/issues"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "tabWidth": 2
+  },
+  "homepage": "https://github.com/well-known-components/uws-http-server#readme",
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "@types/node-fetch": "^2.6.11",
+    "@well-known-components/env-config-provider": "^1.2.0",
+    "@well-known-components/logger": "^3.1.3",
+    "@well-known-components/test-helpers": "^1.3.0",
+    "node-fetch": "2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@well-known-components/interfaces": "^1.4.2",
+    "prom-client": "^15.1.0",
+    "uWebSockets.js": "uNetworking/uWebSockets.js#v20.41.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
