@@ -1,6 +1,6 @@
 {
   "name": "@well-known-components/uws-http-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "uws http server component",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
