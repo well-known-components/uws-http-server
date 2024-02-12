@@ -125,3 +125,4 @@ export async function createMetricsHandler(components: Pick<Components, 'config'
 }
 
 export * from './metrics'
+export { HttpRequest, HttpResponse, WebSocket } from 'uWebSockets.js'
