@@ -36,8 +36,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@well-known-components/interfaces": "^1.4.2",
-    "prom-client": "^15.1.0",
+    "@well-known-components/interfaces": "^1.4.3",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
   },
   "files": [
