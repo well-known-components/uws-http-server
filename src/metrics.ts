@@ -1,6 +1,6 @@
 import { IMetricsComponent } from '@well-known-components/interfaces'
 import * as uws from 'uWebSockets.js'
-import { Components, HttpMetrics, PromRegistry, metrics } from './types'
+import { Components, HttpMetrics, metrics } from './types'
 
 export const CONFIG_PREFIX = 'WKC_METRICS' as const
 
@@ -14,7 +14,10 @@ export function _configKey(key: Uppercase<string>): string {
 
 const noopStartTimer = { end() {} }
 
-export async function createMetricsHandler(components: Pick<Components, 'config' | 'metrics'>, registry: PromRegistry) {
+export async function createMetricsHandler(
+  components: Pick<Components, 'config' | 'metrics'>,
+  registry: IMetricsComponent.Registry
+) {
   const { metrics, config } = components
 
   const metricsPath = (await config.getString(_configKey('PUBLIC_PATH'))) || '/metrics'
